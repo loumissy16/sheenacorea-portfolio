@@ -6,6 +6,7 @@
   --text-main: #4a1525;
   --text-muted: #8c4a5c;
   --peach-pink: #e63956;
+  --salmon-pink: #ff85a1;
   --pink-soft: #ffb3c1;
   --tag-bg: rgba(230, 57, 86, 0.12);
   --peach-coral-led: #ff8e72;
@@ -127,8 +128,19 @@ body {
 }
 
 .hero-heading .highlight {
-  color: var(--peach-pink);
-  text-shadow: 0 0 15px rgba(230, 57, 86, 0.2);
+  color: var(--salmon-pink);
+  text-shadow: 0 0 15px rgba(255, 133, 161, 0.3);
+  background: linear-gradient(90deg, var(--salmon-pink), #ffb3c1, var(--salmon-pink));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shineText 4s linear infinite;
+}
+
+@keyframes shineText {
+  to {
+    background-position: 200% center;
+  }
 }
 
 .hero-subtext {
@@ -209,6 +221,45 @@ body {
 
 .cta-button:active {
   transform: translateY(0) scale(0.97);
+}
+
+.scroll-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-top: 24px;
+  opacity: 0.8;
+}
+
+.scroll-indicator span {
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: var(--text-muted);
+}
+
+.mouse-icon {
+  width: 18px;
+  height: 28px;
+  border: 2px solid var(--peach-pink);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  padding-top: 4px;
+}
+
+.wheel-dot {
+  width: 3px;
+  height: 6px;
+  background-color: var(--peach-pink);
+  border-radius: 2px;
+  animation: mouseScroll 1.6s infinite ease-in-out;
+}
+
+@keyframes mouseScroll {
+  0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(10px); }
 }
 
 .primary-btn {
