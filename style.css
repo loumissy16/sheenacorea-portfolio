@@ -8,6 +8,7 @@
   --peach-pink: #e63956;
   --pink-soft: #ffb3c1;
   --tag-bg: rgba(230, 57, 86, 0.12);
+  --peach-coral-led: #ff8e72;
 }
 
 * {
@@ -16,14 +17,20 @@
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
-  background-color: var(--bg-color);
+  background-image: linear-gradient(rgba(255, 240, 243, 0.75), rgba(255, 240, 243, 0.75)), url("pic2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: var(--text-main);
   line-height: 1.6;
   padding-top: 40px;
   padding-bottom: 60px;
+  min-height: 100vh;
 }
 
 .layout-container {
@@ -41,6 +48,17 @@ body {
   border-radius: 24px;
   padding: 36px;
   box-shadow: 0 6px 20px rgba(230, 57, 86, 0.04);
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease, border-color 0.2s ease;
+}
+
+.bento-card:hover {
+  box-shadow: 0 12px 30px rgba(230, 57, 86, 0.08);
+}
+
+.hero-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .section-header {
@@ -77,6 +95,13 @@ body {
   padding: 6px 14px;
   border-radius: 20px;
   margin-bottom: 20px;
+  cursor: pointer;
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease;
+}
+
+.availability-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(230, 57, 86, 0.15);
 }
 
 .status-dot {
@@ -84,6 +109,13 @@ body {
   height: 8px;
   background-color: var(--peach-pink);
   border-radius: 50%;
+  animation: ledPulseGlow 2s infinite ease-in-out;
+}
+
+@keyframes ledPulseGlow {
+  0% { box-shadow: 0 0 0 0px rgba(230, 57, 86, 0.6); }
+  70% { box-shadow: 0 0 0 8px rgba(230, 57, 86, 0); }
+  100% { box-shadow: 0 0 0 0px rgba(230, 57, 86, 0); }
 }
 
 .hero-heading {
@@ -96,6 +128,7 @@ body {
 
 .hero-heading .highlight {
   color: var(--peach-pink);
+  text-shadow: 0 0 15px rgba(230, 57, 86, 0.2);
 }
 
 .hero-subtext {
@@ -120,15 +153,25 @@ body {
   font-weight: 500;
   padding: 6px 14px;
   border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.pill-tag:hover {
+  transform: translateY(-2px);
+  border-color: var(--peach-pink);
+  box-shadow: 0 4px 12px rgba(230, 57, 86, 0.12);
 }
 
 .hero-actions {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .cta-button {
+  position: relative;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -139,11 +182,33 @@ body {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  transition: opacity 0.2s ease;
+  overflow: hidden;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease, opacity 0.2s ease;
+}
+
+.cta-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.6s ease;
+}
+
+.cta-button:hover::after {
+  left: 140%;
 }
 
 .cta-button:hover {
-  opacity: 0.9;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(230, 57, 86, 0.18);
+}
+
+.cta-button:active {
+  transform: translateY(0) scale(0.97);
 }
 
 .primary-btn {
@@ -167,6 +232,45 @@ body {
   justify-content: center;
 }
 
+.bento-card:active,
+.cta-button:active,
+.pill-tag:active,
+.availability-pill:active,
+.tech-box:active,
+.project-item:active,
+.footer-icon-btn:active,
+.project-action:active {
+  animation: outsidePeachCoralFlash 0.45s ease-out;
+  border-color: var(--peach-coral-led) !important;
+}
+
+@keyframes outsidePeachCoralFlash {
+  0% {
+    box-shadow: 0 0 0 0px var(--peach-coral-led);
+    transform: scale(0.97);
+  }
+  50% {
+    box-shadow: 0 0 30px 12px var(--peach-coral-led);
+  }
+  100% {
+    box-shadow: 0 0 0 0px transparent;
+    transform: scale(1);
+  }
+}
+
+@media (pointer: coarse) {
+  .bento-card,
+  .cta-button,
+  .pill-tag,
+  .availability-pill,
+  .tech-box,
+  .project-item,
+  .footer-icon-btn,
+  .project-action {
+    -webkit-tap-highlight-color: rgba(255, 142, 114, 0.7);
+  }
+}
+
 .about-content p {
   font-size: 1.05rem;
   color: var(--text-muted);
@@ -186,6 +290,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 6px;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease, border-color 0.2s ease;
+  cursor: pointer;
+}
+
+.tech-box:hover {
+  transform: translateY(-3px);
+  border-color: var(--peach-pink);
+  box-shadow: 0 8px 20px rgba(230, 57, 86, 0.1);
 }
 
 .tech-title {
@@ -210,6 +322,13 @@ body {
   border: 1px solid var(--card-border);
   border-radius: 18px;
   padding: 24px;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-3px);
+  border-color: var(--peach-pink);
+  box-shadow: 0 8px 20px rgba(230, 57, 86, 0.1);
 }
 
 .project-header {
@@ -222,15 +341,6 @@ body {
 .project-header h3 {
   font-size: 1.2rem;
   color: var(--text-main);
-}
-
-.project-year {
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--peach-pink);
-  background-color: var(--tag-bg);
-  padding: 2px 8px;
-  border-radius: 8px;
 }
 
 .project-desc {
@@ -254,6 +364,11 @@ body {
   font-weight: 600;
   padding: 4px 10px;
   border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+
+.project-pills span:hover {
+  transform: translateY(-1px);
 }
 
 .project-action {
@@ -264,10 +379,13 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  border-radius: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-action:hover {
   text-decoration: underline;
+  transform: translateX(3px);
 }
 
 .contact-form textarea {
@@ -281,10 +399,12 @@ body {
   resize: vertical;
   margin-bottom: 16px;
   outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .contact-form textarea:focus {
   border-color: var(--peach-pink);
+  box-shadow: 0 0 12px rgba(230, 57, 86, 0.15);
 }
 
 .minimal-footer {
@@ -336,12 +456,14 @@ body {
   border-radius: 8px;
   color: var(--text-main);
   text-decoration: none;
-  transition: background 0.2s ease, color 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease;
 }
 
 .footer-icon-btn:hover {
   background-color: var(--peach-pink);
   color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(230, 57, 86, 0.2);
 }
 
 .footer-copyright-line {
