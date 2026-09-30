@@ -8,6 +8,64 @@
 </head>
 <body>
 
+  <header class="top-nav-bar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Sheena<span class="dot">𐙚</span></a>
+      
+      <nav class="desktop-nav-links">
+        <a href="#about" class="desktop-link">About</a>
+        <a href="#stack" class="desktop-link">Stack</a>
+        <a href="#projects" class="desktop-link">Portfolio</a>
+        <a href="#contact" class="desktop-link">Contact</a>
+      </nav>
+
+      <div class="nav-right-actions">
+        <button class="theme-toggle-btn" id="themeBtn" aria-label="Toggle Theme">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button class="menu-toggle-btn" id="menuBtn" aria-label="Open Menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-overlay" id="navOverlay">
+    <div class="nav-overlay-header">
+      <span class="overlay-logo">Sheena<span class="dot">.</span></span>
+      <button class="menu-close-btn" id="closeBtn" aria-label="Close Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <nav class="overlay-nav-links">
+      <a href="#about" class="nav-link-item">About</a>
+      <a href="#stack" class="nav-link-item">Stack</a>
+      <a href="#projects" class="nav-link-item">Portfolio</a>
+      <a href="#contact" class="nav-link-item">Contact</a>
+    </nav>
+  </div>
+
   <main class="layout-container">
 
     <section class="bento-card hero-card">
@@ -24,7 +82,7 @@
       </h1>
 
       <p class="hero-subtext">
-        I am a BSIT student and front-end developer who builds clean, functional, and responsive web pages.
+        I am a dedicated BSIT student and passionate front-end developer focused on crafting clean, highly functional, and fully responsive web pages. I continuously explore modern design concepts and web technologies to build smooth digital experiences that look great on any screen.
       </p>
 
       <div class="tags-wrapper">
@@ -66,7 +124,7 @@
     <section id="about" class="bento-card">
       <div class="section-header">
         <span class="section-number">01</span>
-        <h2>About Me</h2>
+        <h2>About</h2>
       </div>
       <div class="about-content">
         <p>
@@ -78,7 +136,7 @@
     <section id="stack" class="bento-card">
       <div class="section-header">
         <span class="section-number">02</span>
-        <h2>Tech & Tools</h2>
+        <h2>Stack</h2>
       </div>
 
       <div class="tech-grid">
@@ -104,7 +162,7 @@
     <section id="projects" class="bento-card">
       <div class="section-header">
         <span class="section-number">03</span>
-        <h2>Featured Work</h2>
+        <h2>Portfolio</h2>
       </div>
 
       <div class="projects-grid">
@@ -152,7 +210,7 @@
     <section id="contact" class="bento-card">
       <div class="section-header">
         <span class="section-number">04</span>
-        <h2>Get In Touch</h2>
+        <h2>Contact</h2>
       </div>
 
       <form class="contact-form" action="mailto:loumissy16@gmail.com" method="post" enctype="text/plain">
@@ -173,34 +231,72 @@
   <footer class="minimal-footer">
     <div class="footer-inner">
       <div class="footer-info">
-        <span class="footer-name">Sheena Corea</span>
-        <span class="footer-dot">𐙚</span>
-        <span class="footer-location">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-            <circle cx="12" cy="10" r="3"/>
-          </svg>
-          Philippines
-        </span>
+        <span class="footer-name">Sheena<span class="dot">.</span></span>
+        <span class="footer-subtext">BSIT Student & Web Developer</span>
       </div>
+      
+      <div class="footer-nav-links">
+        <a href="#about" class="footer-pill-link">About</a>
+        <a href="#stack" class="footer-pill-link">Stack</a>
+        <a href="#projects" class="footer-pill-link">Portfolio</a>
+        <a href="#contact" class="footer-pill-link">Contact</a>
+      </div>
+
       <div class="footer-links">
+        <a href="https://github.com/loumissy16" target="_blank" class="footer-icon-btn" aria-label="GitHub">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </a>
         <a href="mailto:loumissy16@gmail.com" class="footer-icon-btn" aria-label="Email">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
             <polyline points="22,6 12,13 2,6"/>
           </svg>
         </a>
-        <a href="https://github.com/loumissy16" target="_blank" class="footer-icon-btn" aria-label="GitHub">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-          </svg>
-        </a>
       </div>
     </div>
-    <div class="footer-copyright-line">
+    
+    <div class="footer-bottom-row">
       <span>© 2026 Sheena Corea 𐙚 All rights reserved.</span>
+      <span>Built with HTML & CSS</span>
     </div>
   </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const closeBtn = document.getElementById('closeBtn');
+    const navOverlay = document.getElementById('navOverlay');
+    const navLinks = document.querySelectorAll('.nav-link-item');
+    const themeBtn = document.getElementById('themeBtn');
+    const sunIcon = document.querySelector('.sun-icon');
+    const moonIcon = document.querySelector('.moon-icon');
+
+    menuBtn.addEventListener('click', () => {
+      navOverlay.classList.add('active');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      navOverlay.classList.remove('active');
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navOverlay.classList.remove('active');
+      });
+    });
+
+    themeBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      if (document.body.classList.contains('dark-mode')) {
+        sunIcon.style.display = 'none';
+        moonIcon.style.display = 'block';
+      } else {
+        sunIcon.style.display = 'block';
+        moonIcon.style.display = 'none';
+      }
+    });
+  </script>
 
 </body>
 </html>
