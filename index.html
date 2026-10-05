@@ -3,300 +3,291 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sheena Corea | BSIT Student & Web Developer</title>
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="top-nav-bar">
-    <div class="nav-container">
-      <a href="#" class="nav-logo">Sheena<span class="dot">𐙚</span></a>
-      
-      <nav class="desktop-nav-links">
-        <a href="#about" class="desktop-link">About</a>
-        <a href="#stack" class="desktop-link">Stack</a>
-        <a href="#projects" class="desktop-link">Portfolio</a>
-        <a href="#contact" class="desktop-link">Contact</a>
-      </nav>
-
-      <div class="nav-right-actions">
-        <button class="theme-toggle-btn" id="themeBtn" aria-label="Toggle Theme">
-          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-          </svg>
-          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
-        </button>
-
-        <button class="menu-toggle-btn" id="menuBtn" aria-label="Open Menu">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </button>
+  <header class="top-nav">
+    <div class="nav-content">
+      <div class="nav-brand">
+        <span class="brand-icon">𐙚</span> SHEENA COREA <span class="brand-sub">WEB DEVELOPER</span>
       </div>
+      <nav class="nav-menu">
+        <a href="#home">HOME</a>
+        <a href="#projects">WORK</a>
+        <a href="#services">SERVICES</a>
+        <a href="#process">PROCESS</a>
+        <div class="nav-social-icons">
+          <a href="https://github.com/loumissy16" target="_blank" title="GitHub">
+            <svg class="icon-svg" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+          </a>
+          <a href="Emailto:loumissy16@gmail.com" title="Email">
+            <svg class="icon-svg" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+        </div>
+        <a href="#contact" class="nav-connect-btn">LET'S CONNECT</a>
+      </nav>
     </div>
   </header>
 
-  <div class="nav-overlay" id="navOverlay">
-    <div class="nav-overlay-header">
-      <span class="overlay-logo">Sheena<span class="dot">.</span></span>
-      <button class="menu-close-btn" id="closeBtn" aria-label="Close Menu">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
-      </button>
-    </div>
-    <nav class="overlay-nav-links">
-      <a href="#about" class="nav-link-item">About</a>
-      <a href="#stack" class="nav-link-item">Stack</a>
-      <a href="#projects" class="nav-link-item">Portfolio</a>
-      <a href="#contact" class="nav-link-item">Contact</a>
-    </nav>
-  </div>
+  <main class="page-container" id="home">
 
-  <main class="layout-container">
+    <section class="hero-section">
+      <div class="hero-text-col">
+        <span class="section-tag">| WEB DEVELOPER |</span>
+        <h1 class="hero-heading">I design experiences<br>that feel like <i>the future.</i></h1>
+        <p class="hero-subtext">I craft intuitive digital experiences that merge human insight with elegant design turning ideas into products people love and remember.</p>
+        
+        <div class="hero-btn-row">
+          <a href="#projects" class="btn primary-pink-btn">VIEW MY WORK ↗</a>
+          <a href="#contact" class="btn outline-btn">GET IN TOUCH 𐙚</a>
+        </div>
 
-    <section class="bento-card hero-card">
-      <div class="availability-pill">
-        <span class="status-dot"></span>
-        Open for learning and new projects
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"/>
-        </svg>
-      </div>
-
-      <h1 class="hero-heading">
-        Hi, I'm <span class="highlight">Sheena Corea</span>
-      </h1>
-
-      <p class="hero-subtext">
-        I am a dedicated BSIT student and passionate front-end developer focused on crafting clean, highly functional, and fully responsive web pages. I continuously explore modern design concepts and web technologies to build smooth digital experiences that look great on any screen.
-      </p>
-
-      <div class="tags-wrapper">
-        <span class="pill-tag">BSIT Student</span>
-        <span class="pill-tag">Web Developer</span>
-        <span class="pill-tag">Front-End Designer</span>
-      </div>
-
-      <div class="hero-actions">
-        <a href="#projects" class="cta-button primary-btn">
-          View Projects
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M5 12h14M12 5l7 7-7 7"/>
-          </svg>
-        </a>
-        <a href="mailto:loumissy16@gmail.com" class="cta-button pink-btn">
-          Email Me
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-            <polyline points="22,6 12,13 2,6"/>
-          </svg>
-        </a>
-        <a href="https://github.com/loumissy16" target="_blank" class="cta-button outline-btn">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-          </svg>
-          GitHub
-        </a>
-      </div>
-
-      <div class="scroll-indicator">
-        <span>SCROLL</span>
-        <div class="mouse-icon">
-          <div class="wheel-dot"></div>
+        <div class="availability-status">
+          <span class="glow-dot"></span> AVAILABLE FOR PROJECTS <span class="sub-muted">Let's build something exceptional.</span>
         </div>
       </div>
-    </section>
 
-    <section id="about" class="bento-card">
-      <div class="section-header">
-        <span class="section-number">01</span>
-        <h2>About</h2>
-      </div>
-      <div class="about-content">
-        <p>
-          I am Sheena Corea, a Bachelor of Science in Information Technology (BSIT) student. I enjoy learning web development and building clear, user-friendly layouts using basic HTML and CSS. I am constantly working to improve my coding skills and design practices.
-        </p>
-      </div>
-    </section>
-
-    <section id="stack" class="bento-card">
-      <div class="section-header">
-        <span class="section-number">02</span>
-        <h2>Stack</h2>
-      </div>
-
-      <div class="tech-grid">
-        <div class="tech-box">
-          <span class="tech-title">HTML5</span>
-          <span class="tech-desc">Structuring web page contents and layouts</span>
-        </div>
-        <div class="tech-box">
-          <span class="tech-title">CSS3</span>
-          <span class="tech-desc">Styling pages with Flexbox, CSS Grid, and custom colors</span>
-        </div>
-        <div class="tech-box">
-          <span class="tech-title">Responsive Design</span>
-          <span class="tech-desc">Ensuring web pages look good on mobile screens and computers</span>
-        </div>
-        <div class="tech-box">
-          <span class="tech-title">Git & GitHub</span>
-          <span class="tech-desc">Managing student code and uploading projects online</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="bento-card">
-      <div class="section-header">
-        <span class="section-number">03</span>
-        <h2>Portfolio</h2>
-      </div>
-
-      <div class="projects-grid">
-        <article class="project-item">
-          <div class="project-header">
-            <h3>Student Developer Portfolio</h3>
+      <div class="hero-visual-col">
+        <div class="halo-circle-bg">
+          <div class="profile-img-container">
+            <img src="pic1.jpg" alt="Sheena Corea Profile" class="hero-profile-pic">
           </div>
-          <p class="project-desc">
-            A simple personal portfolio website created using HTML and CSS to display my academic and personal projects.
-          </p>
-          <div class="project-pills">
-            <span>HTML</span>
-            <span>CSS Grid</span>
-            <span>Flexbox</span>
+        </div>
+        <div class="float-card badge-top-right">Designing with purpose and empathy. </div>
+        <div class="float-card badge-mid-left">EXPERIENCE<br><strong>3+ YEARS</strong><br><span class="sub-muted">creating digital products</span></div>
+        <div class="float-card badge-bottom-right">FOCUS AREAS<br>• Web Development<br>• Front-End Design<br>• UI Visuals<br>• Prototyping</div>
+      </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+      <div class="section-header-flex">
+        <div>
+          <span class="section-tag">FEATURED</span>
+          <h2>Designing impact through meaningful solutions.</h2>
+        </div>
+        <a href="https://github.com/loumissy16" target="_blank" class="view-all-link">VIEW ALL PROJECTS →</a>
+      </div>
+
+      <div class="projects-grid-3">
+        <article class="project-card-item">
+          <div class="project-screen-mockup bg-mock-1">
+            <span class="screen-badge">WEB APP</span>
           </div>
-          <a href="https://github.com/loumissy16" target="_blank" class="project-action">
-            View Repository
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
-            </svg>
-          </a>
+          <div class="project-info-box">
+            <h3>WATCH YOUR BACKS</h3>
+            <p>Community safety reporting web & mobile application.</p>
+            <div class="project-tags-row">
+              <span>Web Dev</span>
+              <span>Flutter</span>
+            </div>
+          </div>
         </article>
 
-        <article class="project-item">
-          <div class="project-header">
-            <h3>Landing Page Layout</h3>
+        <article class="project-card-item">
+          <div class="project-screen-mockup bg-mock-2">
+            <span class="screen-badge">WEB INTERFACE</span>
           </div>
-          <p class="project-desc">
-            A front-end web page created to practice responsive navigation, layout alignment, and button actions.
-          </p>
-          <div class="project-pills">
-            <span>HTML</span>
-            <span>CSS</span>
+          <div class="project-info-box">
+            <h3>COREA APP UI</h3>
+            <p>Multi-page web interface application layout configuration.</p>
+            <div class="project-tags-row">
+              <span>UI Design</span>
+              <span>HTML/CSS</span>
+            </div>
           </div>
-          <a href="https://github.com/loumissy16" target="_blank" class="project-action">
-            View Repository
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
-            </svg>
-          </a>
+        </article>
+
+        <article class="project-card-item">
+          <div class="project-screen-mockup bg-mock-3">
+            <span class="screen-badge">WEB PLATFORM</span>
+          </div>
+          <div class="project-info-box">
+            <h3>STUDENT PORTFOLIO</h3>
+            <p>Responsive student developer showcase built with PHP & HTML.</p>
+            </div>
+          </div>
         </article>
       </div>
     </section>
 
-    <section id="contact" class="bento-card">
-      <div class="section-header">
-        <span class="section-number">04</span>
-        <h2>Contact</h2>
+    <section class="services-tools-layout" id="services">
+      <div class="services-box-main">
+        <span class="section-tag">SERVICES</span>
+        <h2>End-to-end web solutions tailored to your goals.</h2>
+        <div class="services-grid-2x2">
+          <div class="service-cell">
+            <h3>WEB DEVELOPMENT</h3>
+            <p>Build robust, responsive sites that perform seamlessly.</p>
+          </div>
+          <div class="service-cell">
+            <h3>INTERACTION DESIGN</h3>
+            <p>Design intuitive flows that feel calm.</p>
+          </div>
+          <div class="service-cell">
+            <h3>UI VISUAL DESIGN</h3>
+            <p>Create beautiful, consistent, and accessible interfaces.</p>
+          </div>
+          <div class="service-cell">
+            <h3>BACKEND & PHP</h3>
+            <p>Bring ideas to life with secure data handling.</p>
+          </div>
+        </div>
       </div>
 
-      <form class="contact-form" action="mailto:loumissy16@gmail.com" method="post" enctype="text/plain">
-        <textarea name="message" rows="4" required placeholder="Send me a message for inquiries or collaborations..."></textarea>
+      <div class="tools-box-side">
+        <span class="section-tag">TOOLS I USE</span>
+        <h2>Tech Stack</h2>
+        <div class="tools-grid-icons">
+          <div class="tool-badge-pill">HTML5 & CSS3</div>
+          <div class="tool-badge-pill">JavaScript & PHP</div>
+          <div class="tool-badge-pill">Flutter & Dart</div>
+          <div class="tool-badge-pill">Figma & UI</div>
+\        </div>
+      </div>
+    </section>
 
-        <button type="submit" class="cta-button primary-btn full-btn">
-          Send Email
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="22" y1="2" x2="11" y2="13"></line>
-            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-          </svg>
-        </button>
-      </form>
+    <section class="process-section" id="process">
+      <div class="section-header-flex" style="margin-bottom: 2rem;">
+        <div>
+          <span class="section-tag">MY PROCESS</span>
+          <h2>A human-centered approach to web development.</h2>
+        </div>
+      </div>
+
+      <div class="process-steps-5">
+        <div class="process-step-card">
+          <span class="step-number">01</span>
+          <h4>EMPATHIZE</h4>
+          <p>Understand user needs, and their pain points.</p>
+        </div>
+        <div class="process-step-card">
+          <span class="step-number">02</span>
+          <h4>DEFINE</h4>
+          <p>Synthesize insights and define the right problem to solve.</p>
+        </div>
+        <div class="process-step-card">
+          <span class="step-number">03</span>
+          <h4>IDEATE</h4>
+          <p>Brainstorm solutions and explore creative directions.</p>
+        </div>
+        <div class="process-step-card">
+          <span class="step-number">04</span>
+          <h4>DESIGN</h4>
+          <p>Craft intuitive interfaces and delightful experiences.</p>
+        </div>
+        <div class="process-step-card">
+          <span class="step-number">05</span>
+          <h4>TEST & REFINE</h4>
+          <p>Validate, iterate, and refine for real-world impact.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-section">
+      <div class="section-header-flex">
+        <div>
+          <span class="section-tag">KIND WORDS</span>
+          <h2>Stories from amazing people I've had the pleasure to work with.</h2>
+        </div>
+        <a href="#contact" class="view-all-link">VIEW ALL TESTIMONIALS →</a>
+      </div>
+
+      <div class="testimonials-grid-3">
+        <div class="testimonial-card">
+          <p>"Sheena transformed our complex project requirements into a seamless web experience. Her code and design vision are unmatched."</p>
+          <div class="client-info-row">
+            <div class="client-avatar">SC</div>
+            <div>
+              <strong>Sheena Corea</strong>
+              <span>BSIT Student, UMDC</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p>"Working with Sheena was an absolute pleasure. She's insightful, proactive, and truly cares about clean code."</p>
+          <div class="client-info-row">
+            <div class="client-avatar">AL</div>
+            <div>
+              <strong>Academic</strong>
+              <span>BSIT Student</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p>"Her web applications not only look beautiful but also drive results. Our digital engagement increased significantly."</p>
+          <div class="client-info-row">
+            <div class="client-avatar">PM</div>
+            <div>
+              <strong>Project Collaborator</strong>
+              <span>Development Team</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-cta-section" id="contact">
+      <div class="contact-grid-2">
+        <div class="contact-visual-side">
+          <span class="section-tag">HAVE A PROJECT IN MIND?</span>
+          <h2>Let's build something meaningful together.</h2>
+          <p class="contact-email">loumissy16@gmail.com</p>
+          
+          <div class="location-badge-row">
+            <svg class="icon-svg-inline" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <span>Digos City, Davao del Sur</span>
+          </div>
+          
+          <div class="social-contact-icons">
+            <a href="https://github.com/loumissy16" target="_blank" class="contact-icon-pill">
+              <svg class="icon-svg-inline" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+              GitHub: loumissy16
+            </a>
+            <a href="Emailto:loumissy16@gmail.com" class="contact-icon-pill">
+              <svg class="icon-svg-inline" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              Email: loumissy16@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-side">
+          <form class="contact-form" action="contact.php" method="POST">
+            <div class="form-row">
+              <input type="text" name="name" required placeholder="Your Name">
+              <input type="email" name="email" required placeholder="Your Email">
+            </div>
+            <textarea name="message" rows="4" required placeholder="Tell me about your project..."></textarea>
+            <button type="submit" class="btn primary-pink-btn full-width-btn">SEND MESSAGE ↗</button>
+          </form>
+        </div>
+      </div>
     </section>
 
   </main>
 
-  <footer class="minimal-footer">
-    <div class="footer-inner">
-      <div class="footer-info">
-        <span class="footer-name">Sheena<span class="dot">𐙚</span></span>
-        <span class="footer-subtext">BSIT Student & Web Developer</span>
+  <footer class="footer-bottom">
+    <div class="footer-content-flex">
+      <div class="footer-brand-col">
+        <strong>SHEENA COREA</strong> <span class="brand-sub">WEB DEVELOPER</span>
+        <p class="sub-muted" style="font-size: 0.75rem; margin-top: 0.5rem;">Designing the future, one screen at a time.</p>
       </div>
-      
-      <div class="footer-nav-links">
-        <a href="#about" class="footer-pill-link">About</a>
-        <a href="#stack" class="footer-pill-link">Stack</a>
-        <a href="#projects" class="footer-pill-link">Portfolio</a>
-        <a href="#contact" class="footer-pill-link">Contact</a>
-      </div>
-
-      <div class="footer-links">
-        <a href="https://github.com/loumissy16" target="_blank" class="footer-icon-btn" aria-label="GitHub">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-          </svg>
+      <div class="footer-links-col">
+        <a href="https://github.com/loumissy16" target="_blank" title="GitHub">
+          <svg class="icon-svg" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
         </a>
-        <a href="mailto:loumissy16@gmail.com" class="footer-icon-btn" aria-label="Email">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-            <polyline points="22,6 12,13 2,6"/>
-          </svg>
+        <a href="Emailto:loumissy16@gmail.com" title="Email">
+          <svg class="icon-svg" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
         </a>
       </div>
+      <div class="footer-copy-col">
+        <p class="sub-muted">© 2026 Sheena Corea 𐙚 All rights reserved.</p>
+      </div> 
     </div>
-    
-    <div class="footer-bottom-row">
-      <span>© 2026 Sheena Corea 𐙚 All rights reserved.</span>
-      <span>Built with HTML & CSS</span>
-    </div>
-  </footer>
-
-  <script>
-    const menuBtn = document.getElementById('menuBtn');
-    const closeBtn = document.getElementById('closeBtn');
-    const navOverlay = document.getElementById('navOverlay');
-    const navLinks = document.querySelectorAll('.nav-link-item');
-    const themeBtn = document.getElementById('themeBtn');
-    const sunIcon = document.querySelector('.sun-icon');
-    const moonIcon = document.querySelector('.moon-icon');
-
-    menuBtn.addEventListener('click', () => {
-      navOverlay.classList.add('active');
-    });
-
-    closeBtn.addEventListener('click', () => {
-      navOverlay.classList.remove('active');
-    });
-
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        navOverlay.classList.remove('active');
-      });
-    });
-
-    themeBtn.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      if (document.body.classList.contains('dark-mode')) {
-        sunIcon.style.display = 'none';
-        moonIcon.style.display = 'block';
-      } else {
-        sunIcon.style.display = 'block';
-        moonIcon.style.display = 'none';
-      }
-    });
-  </script>
+ </footer>
 
 </body>
 </html>
